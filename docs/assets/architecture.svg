@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" font-family="system-ui,-apple-system,sans-serif" font-size="13">
+  <defs>
+    <linearGradient id="sGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#a78bfa"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="440" rx="12" fill="#0f172a"/>
+  <text x="480" y="28" text-anchor="middle" fill="#94a3b8" font-size="11">MCP SEARCH — FULL-TEXT + VECTOR + STRUCTURED</text>
+
+  <!-- Clients -->
+  <rect x="20" y="120" width="130" height="150" rx="8" fill="#1e293b" stroke="#475569"/>
+  <text x="85" y="140" text-anchor="middle" fill="#94a3b8" font-size="10">MCP CLIENTS</text>
+  <rect x="30" y="155" width="110" height="20" rx="3" fill="#334155"/>
+  <text x="85" y="169" text-anchor="middle" fill="#f1f5f9" font-size="9">Claude / Kiro</text>
+  <rect x="30" y="180" width="110" height="20" rx="3" fill="#334155"/>
+  <text x="85" y="194" text-anchor="middle" fill="#f1f5f9" font-size="9">Cursor / Codex</text>
+  <rect x="30" y="205" width="110" height="20" rx="3" fill="#334155"/>
+  <text x="85" y="219" text-anchor="middle" fill="#f1f5f9" font-size="9">Windsurf</text>
+
+  <line x1="150" y1="195" x2="195" y2="195" stroke="#6366f1" stroke-width="2"/>
+  <polygon points="195,190 205,195 195,200" fill="#6366f1"/>
+
+  <!-- Server -->
+  <rect x="205" y="50" width="340" height="350" rx="8" fill="url(#sGrad)" opacity="0.08" stroke="#a78bfa" stroke-width="1.5"/>
+  <text x="375" y="72" text-anchor="middle" fill="#a78bfa" font-size="14" font-weight="bold">mcp-search</text>
+  <text x="375" y="88" text-anchor="middle" fill="#64748b" font-size="9">Rust · rmcp 1.7 · 20 tools · Dual-backend</text>
+
+  <rect x="217" y="100" width="155" height="55" rx="4" fill="#1e293b"/>
+  <text x="294" y="116" text-anchor="middle" fill="#a78bfa" font-size="9">SEARCH (5)</text>
+  <text x="294" y="131" text-anchor="middle" fill="#64748b" font-size="8">full-text · semantic · multi</text>
+  <text x="294" y="143" text-anchor="middle" fill="#64748b" font-size="8">suggest · find similar</text>
+
+  <rect x="378" y="100" width="155" height="55" rx="4" fill="#1e293b"/>
+  <text x="455" y="116" text-anchor="middle" fill="#38bdf8" font-size="9">INDEXES (5)</text>
+  <text x="455" y="131" text-anchor="middle" fill="#64748b" font-size="8">list · get · create</text>
+  <text x="455" y="143" text-anchor="middle" fill="#64748b" font-size="8">index doc · delete doc</text>
+
+  <rect x="217" y="163" width="155" height="55" rx="4" fill="#1e293b"/>
+  <text x="294" y="179" text-anchor="middle" fill="#34d399" font-size="9">VECTORS (4)</text>
+  <text x="294" y="194" text-anchor="middle" fill="#64748b" font-size="8">upsert · query · namespaces</text>
+  <text x="294" y="206" text-anchor="middle" fill="#64748b" font-size="8">stats</text>
+
+  <rect x="378" y="163" width="155" height="55" rx="4" fill="#1e293b"/>
+  <text x="455" y="179" text-anchor="middle" fill="#fbbf24" font-size="9">ANALYTICS (4)</text>
+  <text x="455" y="194" text-anchor="middle" fill="#64748b" font-size="8">search analytics · index stats</text>
+  <text x="455" y="206" text-anchor="middle" fill="#64748b" font-size="8">explain ranking · test query</text>
+
+  <rect x="217" y="226" width="316" height="40" rx="4" fill="#1e293b"/>
+  <text x="375" y="242" text-anchor="middle" fill="#fb923c" font-size="9">CONFIG (2)</text>
+  <text x="375" y="257" text-anchor="middle" fill="#64748b" font-size="8">get synonyms · update synonyms</text>
+
+  <!-- Backends -->
+  <rect x="590" y="60" width="330" height="340" rx="8" fill="#1e293b" stroke="#475569"/>
+  <text x="755" y="82" text-anchor="middle" fill="#94a3b8" font-size="10">BACKENDS (dual: text + vector)</text>
+
+  <text x="610" y="105" fill="#a78bfa" font-size="9" font-weight="bold">Full-Text:</text>
+  <rect x="610" y="110" width="290" height="24" rx="3" fill="#334155"/>
+  <text x="755" y="126" text-anchor="middle" fill="#f1f5f9" font-size="8">Elasticsearch / OpenSearch</text>
+  <rect x="610" y="138" width="290" height="24" rx="3" fill="#334155"/>
+  <text x="755" y="154" text-anchor="middle" fill="#f1f5f9" font-size="8">Algolia</text>
+  <rect x="610" y="166" width="290" height="24" rx="3" fill="#334155"/>
+  <text x="755" y="182" text-anchor="middle" fill="#f1f5f9" font-size="8">Typesense</text>
+  <rect x="610" y="194" width="290" height="24" rx="3" fill="#334155"/>
+  <text x="755" y="210" text-anchor="middle" fill="#f1f5f9" font-size="8">Meilisearch</text>
+
+  <text x="610" y="240" fill="#34d399" font-size="9" font-weight="bold">Vector (optional, additive):</text>
+  <rect x="610" y="245" width="290" height="24" rx="3" fill="#334155"/>
+  <text x="755" y="261" text-anchor="middle" fill="#f1f5f9" font-size="8">Pinecone</text>
+  <rect x="610" y="273" width="290" height="24" rx="3" fill="#334155"/>
+  <text x="755" y="289" text-anchor="middle" fill="#f1f5f9" font-size="8">Qdrant</text>
+
+  <text x="610" y="320" fill="#fb923c" font-size="9" font-weight="bold">Universal:</text>
+  <rect x="610" y="325" width="290" height="24" rx="3" fill="#334155"/>
+  <text x="755" y="341" text-anchor="middle" fill="#f1f5f9" font-size="8">Custom API — SEARCH_API_URL (handles everything)</text>
+
+  <rect x="610" y="360" width="290" height="24" rx="4" fill="#0f172a" stroke="#475569"/>
+  <text x="755" y="376" text-anchor="middle" fill="#64748b" font-size="8">Elasticsearch + Pinecone = full-text + semantic together</text>
+
+  <text x="480" y="425" text-anchor="middle" fill="#475569" font-size="10">mcp-search v1.0.0 · 20 tools · Full-text + Vector + Structured · 7 backends · Dual-mode</text>
+</svg>
