@@ -44,7 +44,7 @@ fn r(result: Result<serde_json::Value, anyhow::Error>) -> String {
     match result { Ok(v) => serde_json::to_string_pretty(&v).unwrap(), Err(e) => format!("Error: {}", e) }
 }
 
-#[tool_router(server_handler)]
+#[tool_router]
 impl SearchServer {
     // === Search (5) ===
 
@@ -172,4 +172,11 @@ impl SearchServer {
         let rules: Vec<serde_json::Value> = input.rules.unwrap_or_default().iter().map(|r| json!({"input": r.input, "synonyms": r.synonyms})).collect();
         r(self.backend.text.put("/synonyms", &json!({"index": input.index, "rules": rules})).await)
     }
+}
+
+adk_mcp_sdk::mcp_2026_server! {
+    server: SearchServer,
+    task_tools: ["get_index", "create_index", "index_document", "get_index_stats"],
+    approval_tools: ["delete_document"],
+    cache_ttl_ms: 60_000,
 }
