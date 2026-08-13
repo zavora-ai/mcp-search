@@ -1,0 +1,151 @@
+server_id = "mcp_search"
+display_name = "Search"
+version = "1.1.0"
+domain = "search"
+sdk_version = "0.2.0"
+risk_level = "medium"
+writes_allowed = "gated"
+transports = ["stdio"]
+credentials = []
+governance_gates = ["mrtr_approval"]
+environments = ["development", "staging", "production"]
+
+[[tools]]
+name = "search"
+description = "Full-text search with query, filters, facets, and pagination"
+risk_class = "read_only"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "semantic_search"
+description = "Vector/semantic similarity search using embeddings"
+risk_class = "read_only"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "multi_search"
+description = "Search across multiple indexes simultaneously"
+risk_class = "read_only"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "suggest"
+description = "Get autocomplete/typeahead suggestions"
+risk_class = "read_only"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "find_similar"
+description = "Find documents similar to a given document"
+risk_class = "read_only"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "list_indexes"
+description = "List all search indexes/collections"
+risk_class = "read_only"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "get_index"
+description = "Get index details: schema, document count, size"
+risk_class = "read_only"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "create_index"
+description = "Create a new search index with field mappings"
+risk_class = "internal_write"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "index_document"
+description = "Add or update a document in an index"
+risk_class = "read_only"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "delete_document"
+description = "Remove a document from an index"
+risk_class = "internal_write"
+requires_approval = true
+credential_bindings = []
+
+[[tools]]
+name = "upsert_vectors"
+description = "Insert or update vector embeddings"
+risk_class = "read_only"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "query_vectors"
+description = "Query vectors by similarity (top-k nearest neighbors)"
+risk_class = "read_only"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "list_namespaces"
+description = "List vector namespaces/collections"
+risk_class = "read_only"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "get_vector_stats"
+description = "Get vector index stats: count, dimensions, fullness"
+risk_class = "read_only"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "get_search_analytics"
+description = "Get search analytics: top queries, CTR, zero-result queries"
+risk_class = "read_only"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "get_index_stats"
+description = "Get index stats: document count, size, field cardinality"
+risk_class = "read_only"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "explain_ranking"
+description = "Explain why a document ranked where it did for a query"
+risk_class = "read_only"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "test_query"
+description = "Test a query and see scoring breakdown"
+risk_class = "read_only"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "get_synonyms"
+description = "Get configured synonym rules for an index"
+risk_class = "read_only"
+requires_approval = false
+credential_bindings = []
+
+[[tools]]
+name = "update_synonyms"
+description = "Add or update synonym rules"
+risk_class = "internal_write"
+requires_approval = false
+credential_bindings = []
